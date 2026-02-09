@@ -1,7 +1,7 @@
 # 🧱 Brick Breaker (Pygame)
 
 A classic **Brick Breaker / Arkanoid-style game** built using **Python** and **Pygame**.  
-This project demonstrates object-oriented programming, collision handling, and game state management.
+This project demonstrates **object-oriented programming(OOP)**, collision handling, and game state management.
 
 ## 🎮 Features
 - Paddle and ball mechanics
