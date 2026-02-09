@@ -27,7 +27,7 @@ This project demonstrates **object-oriented programming(OOP)**, collision handli
 ```bash
 pip install pygame
 ```
-Run the game:
+2. Run the game:
 ```bash
 python brick_breaker.py
 ```
