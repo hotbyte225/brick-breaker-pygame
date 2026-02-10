@@ -75,9 +75,11 @@ class Brick:
     def __init__(self, x, y):
         self.width = 60
         self.height = 20
+        self.x = x
+        self.y = y
         self.life = 3
         self.color = "Green"
-        self.rect = pygame.Rect(x, y, self.width, self.height)
+        self.rect = pygame.Rect(self.x, self.y, self.width, self.height)
 
     def update_color(self):
         if self.life == 3:
@@ -211,4 +213,5 @@ while True:
 
     pygame.display.flip()
     clock.tick(60)
+
 
