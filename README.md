@@ -6,7 +6,7 @@ This project demonstrates **object-oriented programming(OOP)**, collision handli
 ## 🎮 Features
 - Paddle and ball mechanics
 - Ball attachment system (launch with SPACE)
-- Bricks with multiple hit points (color changes)
+- Bricks with multiple hit points (color changes) and health labels
 - Lives system
 - Win and Game Over screens
 - Restart functionality
