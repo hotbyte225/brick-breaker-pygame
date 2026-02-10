@@ -9,6 +9,7 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Brick Breaker")
 clock = pygame.time.Clock()
 
+small_font = pygame.font.SysFont(None, 30)
 font = pygame.font.SysFont(None, 36)
 big_font = pygame.font.SysFont(None, 72)
 
@@ -72,9 +73,11 @@ class Ball:
 
 class Brick:
     def __init__(self, x, y):
+        self.width = 60
+        self.height = 20
         self.life = 3
         self.color = "Green"
-        self.rect = pygame.Rect(x, y, 60, 20)
+        self.rect = pygame.Rect(x, y, self.width, self.height)
 
     def update_color(self):
         if self.life == 3:
@@ -85,7 +88,9 @@ class Brick:
             self.color = "Red"
 
     def draw(self):
+        brick_life = small_font.render(f"{self.life}", True, "Black")
         pygame.draw.rect(screen, self.color, self.rect)
+        screen.blit(brick_life, (self.x + self.width/2 - 3, self.y))
 
 
 def create_bricks():
@@ -206,3 +211,4 @@ while True:
 
     pygame.display.flip()
     clock.tick(60)
+
